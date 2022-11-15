@@ -8,6 +8,7 @@ struct ButtonCustomStyle: ViewModifier {
 
     @State private var isHovering = false
     @GestureState private var isActive = false
+    @Environment(\.isEnabled) private var isEnabled
 
     private var activeStateUpdater: GestureStateGesture<DragGesture, Bool> {
         DragGesture(minimumDistance: 0.0)
@@ -17,6 +18,9 @@ struct ButtonCustomStyle: ViewModifier {
     }
 
     private var backgroundColor: Color {
+        if !isEnabled {
+            return defaultColor.opacity(0.5)
+        }
         if isActive {
             return activeColor
         }
