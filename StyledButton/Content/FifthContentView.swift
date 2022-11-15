@@ -11,11 +11,7 @@ struct FifthContentView: View {
                         systemImage: "doc.text.below.ecg")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-4").opacity(0.15),
-                    activeColor: Color("geekblue-4").opacity(0.20)
-                )
+                .buttonStyle(MultiStateButton(.transparentTwo))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(
@@ -25,21 +21,13 @@ struct FifthContentView: View {
                     )
                     .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-4").opacity(0.15),
-                    activeColor: Color("geekblue-4").opacity(0.20)
-                )
+                .buttonStyle(MultiStateButton(.transparentTwo))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "View Report")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-4").opacity(0.15),
-                    activeColor: Color("geekblue-4").opacity(0.20)
-                )
+                .buttonStyle(MultiStateButton(.transparentTwo))
                 Spacer()
             }
             HStack {
@@ -50,11 +38,7 @@ struct FifthContentView: View {
                         systemImage: "doc.text.below.ecg")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-4").opacity(0.15),
-                    activeColor: Color("geekblue-4").opacity(0.20)
-                )
+                .buttonStyle(MultiStateButton(.transparentTwo))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
@@ -65,27 +49,18 @@ struct FifthContentView: View {
                     )
                     .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-4").opacity(0.15),
-                    activeColor: Color("geekblue-4").opacity(0.20)
-                )
+                .buttonStyle(MultiStateButton(.transparentTwo))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "View Report")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-4").opacity(0.15),
-                    activeColor: Color("geekblue-4").opacity(0.20)
-                )
+                .buttonStyle(MultiStateButton(.transparentTwo))
                 .disabled(true)
                 Spacer()
             }
         }
-        .padding()
     }
     
     private func action() {

@@ -12,6 +12,7 @@ struct StyledButtonApp: App {
                 FifthContentView()
                 SixthContentView()
             }
+            .padding()
             .background(Color("dark-indigo"))
         }
     }

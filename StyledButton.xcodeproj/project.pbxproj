@@ -13,12 +13,13 @@
 		C31BBB1029223C3400AE9352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31BBB0F29223C3400AE9352 /* Preview Assets.xcassets */; };
 		C31BBB172922871D00AE9352 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BBB162922871D00AE9352 /* ButtonLabel.swift */; };
 		C31BBB192922995600AE9352 /* ButtonLabelDefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BBB182922995600AE9352 /* ButtonLabelDefaultStyle.swift */; };
-		C31BBB1B2922C91B00AE9352 /* ButtonCustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BBB1A2922C91B00AE9352 /* ButtonCustomStyle.swift */; };
 		C31BBB1D2922CBE800AE9352 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BBB1C2922CBE800AE9352 /* SecondContentView.swift */; };
 		C39BB8E929239FDA00B1ED3A /* ThirdContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8E829239FDA00B1ED3A /* ThirdContentView.swift */; };
 		C39BB8EB2923A10B00B1ED3A /* FourthContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8EA2923A10B00B1ED3A /* FourthContentView.swift */; };
 		C39BB8ED2923A6B300B1ED3A /* FifthContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8EC2923A6B300B1ED3A /* FifthContentView.swift */; };
 		C39BB8EF2923A8E500B1ED3A /* SixthContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8EE2923A8E500B1ED3A /* SixthContentView.swift */; };
+		C39BB8F22923FAFB00B1ED3A /* MultiStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */; };
+		C39BB8F42923FC7300B1ED3A /* MultiStateButtonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +30,13 @@
 		C31BBB0F29223C3400AE9352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C31BBB162922871D00AE9352 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
 		C31BBB182922995600AE9352 /* ButtonLabelDefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabelDefaultStyle.swift; sourceTree = "<group>"; };
-		C31BBB1A2922C91B00AE9352 /* ButtonCustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustomStyle.swift; sourceTree = "<group>"; };
 		C31BBB1C2922CBE800AE9352 /* SecondContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentView.swift; sourceTree = "<group>"; };
 		C39BB8E829239FDA00B1ED3A /* ThirdContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdContentView.swift; sourceTree = "<group>"; };
 		C39BB8EA2923A10B00B1ED3A /* FourthContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthContentView.swift; sourceTree = "<group>"; };
 		C39BB8EC2923A6B300B1ED3A /* FifthContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthContentView.swift; sourceTree = "<group>"; };
 		C39BB8EE2923A8E500B1ED3A /* SixthContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthContentView.swift; sourceTree = "<group>"; };
+		C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStateButton.swift; sourceTree = "<group>"; };
+		C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStateButtonParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +72,9 @@
 				C39BB8F02923ADF300B1ED3A /* Content */,
 				C31BBB0829223C3200AE9352 /* StyledButtonApp.swift */,
 				C31BBB162922871D00AE9352 /* ButtonLabel.swift */,
+				C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */,
+				C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */,
 				C31BBB182922995600AE9352 /* ButtonLabelDefaultStyle.swift */,
-				C31BBB1A2922C91B00AE9352 /* ButtonCustomStyle.swift */,
 				C31BBB0C29223C3400AE9352 /* Assets.xcassets */,
 				C31BBB0E29223C3400AE9352 /* Preview Content */,
 			);
@@ -172,13 +175,14 @@
 				C39BB8EB2923A10B00B1ED3A /* FourthContentView.swift in Sources */,
 				C39BB8ED2923A6B300B1ED3A /* FifthContentView.swift in Sources */,
 				C31BBB172922871D00AE9352 /* ButtonLabel.swift in Sources */,
+				C39BB8F22923FAFB00B1ED3A /* MultiStateButton.swift in Sources */,
 				C39BB8E929239FDA00B1ED3A /* ThirdContentView.swift in Sources */,
 				C31BBB0B29223C3200AE9352 /* FirstContentView.swift in Sources */,
+				C39BB8F42923FC7300B1ED3A /* MultiStateButtonParameters.swift in Sources */,
 				C31BBB192922995600AE9352 /* ButtonLabelDefaultStyle.swift in Sources */,
 				C31BBB0929223C3200AE9352 /* StyledButtonApp.swift in Sources */,
 				C39BB8EF2923A8E500B1ED3A /* SixthContentView.swift in Sources */,
 				C31BBB1D2922CBE800AE9352 /* SecondContentView.swift in Sources */,
-				C31BBB1B2922C91B00AE9352 /* ButtonCustomStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +311,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StyledButton/Preview Content\"";
-				DEVELOPMENT_TEAM = A9L2V6G6UF;
+				DEVELOPMENT_TEAM = Q28FDW5327;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Styled Button";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -338,9 +345,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StyledButton/Preview Content\"";
-				DEVELOPMENT_TEAM = A9L2V6G6UF;
+				DEVELOPMENT_TEAM = Q28FDW5327;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Styled Button";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

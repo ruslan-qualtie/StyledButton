@@ -9,31 +9,19 @@ struct SecondContentView: View {
                     ButtonLabel(systemImage: "person.badge.plus")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-6").opacity(0.1),
-                    activeColor: Color("geekblue-6").opacity(0.2)
-                )
+                .buttonStyle(MultiStateButton(.transparentOne))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-6").opacity(0.1),
-                    activeColor: Color("geekblue-6").opacity(0.2)
-                )
+                .buttonStyle(MultiStateButton(.transparentOne))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
                         .buttonLabelSmallStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-6").opacity(0.1),
-                    activeColor: Color("geekblue-6").opacity(0.2)
-                )
+                .buttonStyle(MultiStateButton(.transparentOne))
                 Spacer()
             }
             HStack {
@@ -42,38 +30,25 @@ struct SecondContentView: View {
                     ButtonLabel(systemImage: "person.badge.plus")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-6").opacity(0.1),
-                    activeColor: Color("geekblue-6").opacity(0.2)
-                )
+                .buttonStyle(MultiStateButton(.transparentOne))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-6").opacity(0.1),
-                    activeColor: Color("geekblue-6").opacity(0.2)
-                )
+                .buttonStyle(MultiStateButton(.transparentOne))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
                         .buttonLabelSmallStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: Color("geekblue-3"),
-                    hoverColor: Color("geekblue-6").opacity(0.1),
-                    activeColor: Color("geekblue-6").opacity(0.2)
-                )
+                .buttonStyle(MultiStateButton(.transparentOne))
                 .disabled(true)
                 Spacer()
             }
         }
-        .padding()
     }
     
     private func action() {

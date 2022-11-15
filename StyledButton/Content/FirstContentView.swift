@@ -12,12 +12,7 @@ struct FirstContentView: View {
                     )
                     .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: .white,
-                    defaultColor: Color("geekblue-6").opacity(0.8),
-                    hoverColor: Color("geekblue-6").opacity(0.9),
-                    activeColor: Color("geekblue-6")
-                )
+                .buttonStyle(MultiStateButton(.blue))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(
@@ -27,23 +22,13 @@ struct FirstContentView: View {
                     )
                     .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: .white,
-                    defaultColor: Color("geekblue-6").opacity(0.8),
-                    hoverColor: Color("geekblue-6").opacity(0.9),
-                    activeColor: Color("geekblue-6")
-                )
+                .buttonStyle(MultiStateButton(.blue))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: .white,
-                    defaultColor: Color("geekblue-6").opacity(0.8),
-                    hoverColor: Color("geekblue-6").opacity(0.9),
-                    activeColor: Color("geekblue-6")
-                )
+                .buttonStyle(MultiStateButton(.blue))
                 Spacer()
             }
             HStack {
@@ -55,12 +40,7 @@ struct FirstContentView: View {
                     )
                     .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: .white,
-                    defaultColor: Color("geekblue-6").opacity(0.8),
-                    hoverColor: Color("geekblue-6").opacity(0.9),
-                    activeColor: Color("geekblue-6")
-                )
+                .buttonStyle(MultiStateButton(.blue))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
@@ -71,29 +51,18 @@ struct FirstContentView: View {
                     )
                     .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: .white,
-                    defaultColor: Color("geekblue-6").opacity(0.8),
-                    hoverColor: Color("geekblue-6").opacity(0.9),
-                    activeColor: Color("geekblue-6")
-                )
+                .buttonStyle(MultiStateButton(.blue))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
                         .buttonLabelDefaultStyle()
                 }
-                .buttonCustomStyle(
-                    foregroundColor: .white,
-                    defaultColor: Color("geekblue-6").opacity(0.8),
-                    hoverColor: Color("geekblue-6").opacity(0.9),
-                    activeColor: Color("geekblue-6")
-                )
+                .buttonStyle(MultiStateButton(.blue))
                 .disabled(true)
                 Spacer()
             }
         }
-        .padding()
     }
     
     private func action() {
