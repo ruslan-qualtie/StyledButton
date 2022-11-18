@@ -4,7 +4,7 @@ struct MultiStateButton: ButtonStyle {
     @Environment(\.isEnabled) private var isEnabled
     @State private var isHovering = false
     private var parameters: MultiStateButtonParameters
-    
+
     init(_ parameters: MultiStateButtonParameters) {
         self.parameters = parameters
     }
@@ -16,7 +16,7 @@ struct MultiStateButton: ButtonStyle {
             .background(backgroundColor(isPressed: configuration.isPressed))
             .cornerRadius(8)
     }
-    
+
     private func backgroundColor(isPressed: Bool) -> Color {
         if !isEnabled {
             return parameters.backgroundDefaultColor.opacity(0.3)
@@ -26,7 +26,7 @@ struct MultiStateButton: ButtonStyle {
         }
         return isHovering ? parameters.backgroundHoverColor : parameters.backgroundDefaultColor
     }
-    
+
     private func updateHovering(onHover: Bool) {
         withAnimation(.easeOut(duration: 0.05)) {
             isHovering = onHover

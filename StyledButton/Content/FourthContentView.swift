@@ -7,7 +7,7 @@ struct FourthContentView: View {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done", systemImage: "doc.text.below.ecg")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.white))
                 Spacer()
@@ -17,13 +17,13 @@ struct FourthContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.white))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.white))
                 Spacer()
@@ -32,7 +32,7 @@ struct FourthContentView: View {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done", systemImage: "doc.text.below.ecg")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.white))
                 .disabled(true)
@@ -43,14 +43,14 @@ struct FourthContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.white))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.white))
                 .disabled(true)
@@ -58,7 +58,7 @@ struct FourthContentView: View {
             }
         }
     }
-    
+
     private func action() {
         debugPrint("pressed")
     }

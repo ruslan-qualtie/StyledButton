@@ -5,6 +5,7 @@ struct StyledButtonApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
+                SeventhContentView()
                 FirstContentView()
                 SecondContentView()
                 ThirdContentView()

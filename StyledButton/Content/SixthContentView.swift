@@ -8,8 +8,9 @@ struct SixthContentView: View {
                 Button(action: action) {
                     ButtonLabel(
                         text: "View Report",
-                        systemImage: "doc.text.below.ecg")
-                        .buttonLabelDefaultStyle()
+                        systemImage: "doc.text.below.ecg"
+                    )
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentThree))
                 Spacer()
@@ -19,13 +20,13 @@ struct SixthContentView: View {
                         systemImage: "doc.text.below.ecg",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentThree))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "View Report")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentThree))
                 Spacer()
@@ -35,8 +36,9 @@ struct SixthContentView: View {
                 Button(action: action) {
                     ButtonLabel(
                         text: "View Report",
-                        systemImage: "doc.text.below.ecg")
-                        .buttonLabelDefaultStyle()
+                        systemImage: "doc.text.below.ecg"
+                    )
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentThree))
                 .disabled(true)
@@ -47,14 +49,14 @@ struct SixthContentView: View {
                         systemImage: "doc.text.below.ecg",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentThree))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "View Report")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentThree))
                 .disabled(true)
@@ -62,7 +64,7 @@ struct SixthContentView: View {
             }
         }
     }
-    
+
     private func action() {
         debugPrint("pressed")
     }

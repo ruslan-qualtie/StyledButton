@@ -18,7 +18,7 @@ extension MultiStateButtonParameters {
             backgroundActiveColor: Color("geekblue-6")
         )
     }
-    
+
     static var transparentOne: MultiStateButtonParameters {
         .init(
             foregroundDefaultColor: Color("geekblue-3"),
@@ -27,7 +27,7 @@ extension MultiStateButtonParameters {
             backgroundActiveColor: Color("geekblue-6").opacity(0.2)
         )
     }
-    
+
     static var cyan: MultiStateButtonParameters {
         .init(
             foregroundDefaultColor: .black,
@@ -37,7 +37,7 @@ extension MultiStateButtonParameters {
             backgroundActiveColor: Color("cyan-5")
         )
     }
-    
+
     static var white: MultiStateButtonParameters {
         .init(
             foregroundDefaultColor: Color("dark-indigo"),
@@ -47,7 +47,7 @@ extension MultiStateButtonParameters {
             backgroundActiveColor: .white
         )
     }
-    
+
     static var transparentTwo: MultiStateButtonParameters {
         .init(
             foregroundDefaultColor: Color("geekblue-3"),
@@ -56,7 +56,7 @@ extension MultiStateButtonParameters {
             backgroundActiveColor: Color("geekblue-4").opacity(0.20)
         )
     }
-    
+
     static var transparentThree: MultiStateButtonParameters {
         .init(
             foregroundDefaultColor: Color("geekblue-3"),

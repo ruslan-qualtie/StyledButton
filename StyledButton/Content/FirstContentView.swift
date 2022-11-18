@@ -10,7 +10,7 @@ struct FirstContentView: View {
                         text: "Done",
                         systemImage: "doc.text.below.ecg"
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.blue))
                 Spacer()
@@ -20,13 +20,13 @@ struct FirstContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.blue))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.blue))
                 Spacer()
@@ -38,7 +38,7 @@ struct FirstContentView: View {
                         text: "Done",
                         systemImage: "doc.text.below.ecg"
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.blue))
                 .disabled(true)
@@ -49,14 +49,14 @@ struct FirstContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.blue))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.blue))
                 .disabled(true)
@@ -64,7 +64,7 @@ struct FirstContentView: View {
             }
         }
     }
-    
+
     private func action() {
         debugPrint("pressed")
     }

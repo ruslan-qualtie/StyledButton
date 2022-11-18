@@ -7,7 +7,7 @@ struct ThirdContentView: View {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done", systemImage: "doc.text.below.ecg")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.cyan))
                 Spacer()
@@ -17,13 +17,13 @@ struct ThirdContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.cyan))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.cyan))
                 Spacer()
@@ -32,7 +32,7 @@ struct ThirdContentView: View {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done", systemImage: "doc.text.below.ecg")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.cyan))
                 .disabled(true)
@@ -43,14 +43,14 @@ struct ThirdContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelDefaultStyle()
+                    .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.cyan))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.cyan))
                 .disabled(true)
@@ -58,7 +58,7 @@ struct ThirdContentView: View {
             }
         }
     }
-    
+
     private func action() {
         debugPrint("pressed")
     }

@@ -7,19 +7,19 @@ struct SecondContentView: View {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "person.badge.plus")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentOne))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentOne))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelSmallStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentOne))
                 Spacer()
@@ -28,21 +28,21 @@ struct SecondContentView: View {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "person.badge.plus")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentOne))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelDefaultStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentOne))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelSmallStyle()
+                        .buttonLabelStyle(.large, .hug)
                 }
                 .buttonStyle(MultiStateButton(.transparentOne))
                 .disabled(true)
@@ -50,7 +50,7 @@ struct SecondContentView: View {
             }
         }
     }
-    
+
     private func action() {
         debugPrint("pressed")
     }
