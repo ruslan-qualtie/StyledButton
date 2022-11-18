@@ -7,44 +7,38 @@ struct SecondContentView: View {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "person.badge.plus")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentOne))
+                .buttonStyle(MultiStateButton(.transparentOne, .large, .hug))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentOne))
+                .buttonStyle(MultiStateButton(.transparentOne, .large, .hug))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentOne))
+                .buttonStyle(MultiStateButton(.transparentOne, .large, .hug))
                 Spacer()
             }
             HStack {
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "person.badge.plus")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentOne))
+                .buttonStyle(MultiStateButton(.transparentOne, .large, .hug))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentOne))
+                .buttonStyle(MultiStateButton(.transparentOne, .large, .hug))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(systemImage: "info.circle")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentOne))
+                .buttonStyle(MultiStateButton(.transparentOne, .large, .hug))
                 .disabled(true)
                 Spacer()
             }

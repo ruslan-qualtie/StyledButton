@@ -1,6 +1,6 @@
 import SwiftUI
 
- struct ButtonLabel<Title: View, Icon: View>: View {
+struct ButtonLabel<Title: View, Icon: View>: View {
     private let titleContent: () -> Title?
     private let iconContent: () -> Icon?
     private let iconAlignment: IconAlignment
@@ -54,13 +54,13 @@ import SwiftUI
             }
         }
     }
- }
+}
 
- struct ButtonLabel_Previews: PreviewProvider {
+struct ButtonLabel_Previews: PreviewProvider {
     static var previews: some View {
         ButtonLabel(text: "Done", systemImage: "doc.text.below.ecg")
         ButtonLabel(text: "Done", systemImage: "doc.text.below.ecg", alignment: .trailing)
         ButtonLabel(text: "Done")
         ButtonLabel(systemImage: "info.circle")
     }
- }
+}

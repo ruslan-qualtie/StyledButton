@@ -7,37 +7,31 @@ struct SeventhContentView: View {
             VStack(alignment: .leading) {
                 Button(action: action) {
                     ButtonLabel(text: "Save")
-                        .buttonLabelStyle(.small, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .small, .hug))
                 Button(action: action) {
                     ButtonLabel(text: "Save")
-                        .buttonLabelStyle(.medium, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .medium, .hug))
                 Button(action: action) {
                     ButtonLabel(text: "Save")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .hug))
             }
             Spacer(minLength: 50)
             VStack(alignment: .leading) {
                 Button(action: action) {
                     ButtonLabel(text: "Save")
-                        .buttonLabelStyle(.small, .fill)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .small, .fill))
                 Button(action: action) {
                     ButtonLabel(text: "Save")
-                        .buttonLabelStyle(.medium, .fill)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .medium, .fill))
                 Button(action: action) {
                     ButtonLabel(text: "Save")
-                        .buttonLabelStyle(.large, .fill)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .fill))
             }
             Spacer(minLength: 50)
         }

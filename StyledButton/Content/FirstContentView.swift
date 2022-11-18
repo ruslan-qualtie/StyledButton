@@ -10,9 +10,8 @@ struct FirstContentView: View {
                         text: "Done",
                         systemImage: "doc.text.below.ecg"
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .hug))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(
@@ -20,15 +19,13 @@ struct FirstContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .hug))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .hug))
                 Spacer()
             }
             HStack {
@@ -38,9 +35,8 @@ struct FirstContentView: View {
                         text: "Done",
                         systemImage: "doc.text.below.ecg"
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .hug))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
@@ -49,16 +45,14 @@ struct FirstContentView: View {
                         systemImage: "checkmark",
                         alignment: .trailing
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .hug))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "Done")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.blue))
+                .buttonStyle(MultiStateButton(.blue, .large, .hug))
                 .disabled(true)
                 Spacer()
             }

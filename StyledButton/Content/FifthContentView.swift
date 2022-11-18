@@ -10,9 +10,8 @@ struct FifthContentView: View {
                         text: "View Report",
                         systemImage: "doc.text.below.ecg"
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentTwo))
+                .buttonStyle(MultiStateButton(.transparentTwo, .large, .hug))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(
@@ -20,15 +19,13 @@ struct FifthContentView: View {
                         systemImage: "doc.text.below.ecg",
                         alignment: .trailing
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentTwo))
+                .buttonStyle(MultiStateButton(.transparentTwo, .large, .hug))
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "View Report")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentTwo))
+                .buttonStyle(MultiStateButton(.transparentTwo, .large, .hug))
                 Spacer()
             }
             HStack {
@@ -38,9 +35,8 @@ struct FifthContentView: View {
                         text: "View Report",
                         systemImage: "doc.text.below.ecg"
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentTwo))
+                .buttonStyle(MultiStateButton(.transparentTwo, .large, .hug))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
@@ -49,16 +45,14 @@ struct FifthContentView: View {
                         systemImage: "doc.text.below.ecg",
                         alignment: .trailing
                     )
-                    .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentTwo))
+                .buttonStyle(MultiStateButton(.transparentTwo, .large, .hug))
                 .disabled(true)
                 Spacer()
                 Button(action: action) {
                     ButtonLabel(text: "View Report")
-                        .buttonLabelStyle(.large, .hug)
                 }
-                .buttonStyle(MultiStateButton(.transparentTwo))
+                .buttonStyle(MultiStateButton(.transparentTwo, .large, .hug))
                 .disabled(true)
                 Spacer()
             }
