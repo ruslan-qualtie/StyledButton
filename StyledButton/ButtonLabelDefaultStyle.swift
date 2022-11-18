@@ -38,21 +38,12 @@ struct ButtonLabelStyle: ViewModifier {
     }
 
     func body(content: Content) -> some View {
-        switch contentMode {
-        case .hug:
-            content
-                .padding(.horizontal, 16)
-                .padding(.vertical, verticalPadding)
-                .font(.system(size: fontSize, weight: .semibold))
-                .contentShape(Rectangle())
-        case .fill:
-            content
-                .padding(.horizontal, 16)
-                .padding(.vertical, verticalPadding)
-                .font(.system(size: fontSize, weight: .semibold))
-                .frame(maxWidth: .infinity)
-                .contentShape(Rectangle())
-        }
+        content
+            .padding(.horizontal, 16)
+            .padding(.vertical, verticalPadding)
+            .font(.system(size: fontSize, weight: .semibold))
+            .contentMode(contentMode)
+            .contentShape(Rectangle())
     }
 }
 
@@ -61,5 +52,16 @@ extension View {
         modifier(
             ButtonLabelStyle(contentSize: size, contentMode: mode)
         )
+    }
+}
+
+extension View {
+    @ViewBuilder func contentMode(_ contentMode: ButtonLabelContentMode) -> some View {
+        switch contentMode {
+        case .hug:
+            self
+        case .fill:
+            self.frame(maxWidth: .infinity)
+        }
     }
 }
