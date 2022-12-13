@@ -1,13 +1,14 @@
 import SwiftUI
 
-enum ButtonContentSize {
+enum ButtonContentSize: CaseIterable {
     case small
     case medium
     case large
 }
 
-enum ButtonContentMode {
+enum ButtonContentMode:  Equatable {
     case hug
+    case fixed(width: CGFloat)
     case fill
 }
 
@@ -17,24 +18,58 @@ struct MultiStateButton: ButtonStyle {
     private var parameters: MultiStateButtonParameters
     private var contentSize: ButtonContentSize
     private var contentMode: ButtonContentMode
+    private var iconPosition: ButtonLabelIconPosition
+    
+    private var isHugIconButton: Bool {
+        iconPosition == .onlyIcon && contentMode == .hug
+    }
+    
 
     private var fontSize: CGFloat {
         switch contentSize {
         case .small:
-            return 12
-        case .medium:
-            return 14
-        case .large:
             return 16
+        case .medium:
+            return 16
+        case .large:
+            return 20
+        }
+    }
+    
+    private var iconButtonSize: CGSize {
+        switch contentSize {
+        case .small:
+            return .init(width: 32, height: 32)
+        case .medium:
+            return .init(width: 44, height: 44)
+        case .large:
+            return .init(width: 56, height: 56)
         }
     }
 
     private var verticalPadding: CGFloat {
+        if isHugIconButton {
+            return 0
+        }
+        switch contentSize {
+        case .small:
+            return 4
+        case .medium:
+            return 10
+        case .large:
+            return 14
+        }
+    }
+    
+    private var horizontalPadding: CGFloat {
+        if isHugIconButton {
+            return 0
+        }
         switch contentSize {
         case .small:
             return 8
         case .medium:
-            return 12
+            return 16
         case .large:
             return 16
         }
@@ -43,18 +78,21 @@ struct MultiStateButton: ButtonStyle {
     init(
         _ parameters: MultiStateButtonParameters,
         _ contentSize: ButtonContentSize,
-        _ contentMode: ButtonContentMode
+        _ contentMode: ButtonContentMode,
+        _ iconPosition: ButtonLabelIconPosition
     ) {
         self.parameters = parameters
         self.contentSize = contentSize
         self.contentMode = contentMode
+        self.iconPosition = iconPosition
     }
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding(.horizontal, 16)
-            .padding(.vertical, verticalPadding)
             .font(.system(size: fontSize, weight: .semibold))
+            .padding(.horizontal, horizontalPadding)
+            .padding(.vertical, verticalPadding)
+            .iconButtonSize(iconButtonSize, contentMode: contentMode, iconPosition: iconPosition)
             .contentMode(contentMode)
             .contentShape(Rectangle())
             .onHover(perform: updateHovering(onHover:))
@@ -85,8 +123,21 @@ extension View {
         switch contentMode {
         case .hug:
             self
+        case .fixed(width: let width):
+            self.frame(width: width)
         case .fill:
             self.frame(maxWidth: .infinity)
+        }
+    }
+}
+
+extension View {
+    @ViewBuilder func iconButtonSize(_ size: CGSize, contentMode: ButtonContentMode, iconPosition: ButtonLabelIconPosition) -> some View {
+        switch (iconPosition, contentMode) {
+        case (.onlyIcon, .hug):
+            self.frame(width: size.width, height: size.height)
+        default:
+            self
         }
     }
 }
