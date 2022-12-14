@@ -24,15 +24,14 @@ struct MultiStateButton: ButtonStyle {
         iconPosition == .onlyIcon && contentMode == .hug
     }
     
-
-    private var fontSize: CGFloat {
+    private var font: Font {
         switch contentSize {
         case .small:
-            return 16
+            return .custom("SFProText-Semibold", fixedSize: 16)
         case .medium:
-            return 16
+            return .custom("SFProText-Semibold", fixedSize: 16)
         case .large:
-            return 20
+            return .custom("SFProDisplay-Semibold", fixedSize: 20)
         }
     }
     
@@ -53,11 +52,11 @@ struct MultiStateButton: ButtonStyle {
         }
         switch contentSize {
         case .small:
-            return 4
+            return 6
         case .medium:
-            return 10
+            return 12
         case .large:
-            return 14
+            return 15
         }
     }
     
@@ -89,7 +88,7 @@ struct MultiStateButton: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: fontSize, weight: .semibold))
+            .font(font)
             .padding(.horizontal, horizontalPadding)
             .padding(.vertical, verticalPadding)
             .iconButtonSize(iconButtonSize, contentMode: contentMode, iconPosition: iconPosition)

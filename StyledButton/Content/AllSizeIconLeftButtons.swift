@@ -16,6 +16,7 @@ struct AllSizeIconLeftButtons: View {
                     ButtonLabel(
                         text: title,
                         systemImage: icon,
+                        contentSize: size,
                         packing: packing
                     )
                 }
