@@ -6,7 +6,7 @@ struct AllSizeTextButtons: View {
     let contentMode: ButtonContentMode
     let packing: ButtonLabelPacking
     let action: () -> Void
-    
+
     var buttons: some View {
         HStack(alignment: .top) {
             Spacer()
@@ -14,7 +14,28 @@ struct AllSizeTextButtons: View {
                 Button(action: action) {
                     ButtonLabel(
                         text: title,
+                        parameters: parameters,
+                        contentSize: size,
                         packing: packing
+                    )
+                }
+                .buttonStyle(MultiStateButton(parameters, size, contentMode, .noIcon))
+                Spacer()
+            }
+        }
+    }
+
+    var loadingButtons: some View {
+        HStack(alignment: .top) {
+            Spacer()
+            ForEach(ButtonContentSize.allCases, id: \.self) { size in
+                Button(action: action) {
+                    ButtonLabel(
+                        text: title,
+                        parameters: parameters,
+                        contentSize: size,
+                        packing: packing,
+                        isLoading: true
                     )
                 }
                 .buttonStyle(MultiStateButton(parameters, size, contentMode, .noIcon))
@@ -26,6 +47,7 @@ struct AllSizeTextButtons: View {
     var body: some View {
         VStack {
             buttons
+            loadingButtons.disabled(true)
             buttons.disabled(true)
         }
     }

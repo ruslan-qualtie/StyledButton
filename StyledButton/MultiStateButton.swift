@@ -6,7 +6,7 @@ enum ButtonContentSize: CaseIterable {
     case large
 }
 
-enum ButtonContentMode:  Equatable {
+enum ButtonContentMode: Equatable {
     case hug
     case fixed(width: CGFloat)
     case fill
@@ -19,11 +19,11 @@ struct MultiStateButton: ButtonStyle {
     private var contentSize: ButtonContentSize
     private var contentMode: ButtonContentMode
     private var iconPosition: ButtonLabelIconPosition
-    
+
     private var isHugIconButton: Bool {
         iconPosition == .onlyIcon && contentMode == .hug
     }
-    
+
     private var font: Font {
         switch contentSize {
         case .small:
@@ -34,43 +34,15 @@ struct MultiStateButton: ButtonStyle {
             return .custom("SFProDisplay-Semibold", fixedSize: 20)
         }
     }
-    
-    private var iconButtonSize: CGSize {
-        switch contentSize {
-        case .small:
-            return .init(width: 32, height: 32)
-        case .medium:
-            return .init(width: 44, height: 44)
-        case .large:
-            return .init(width: 56, height: 56)
-        }
-    }
 
-    private var verticalPadding: CGFloat {
-        if isHugIconButton {
-            return 0
-        }
+    private var padding: CGFloat {
         switch contentSize {
         case .small:
-            return 6
+            return 4
         case .medium:
-            return 12
+            return 10
         case .large:
-            return 15
-        }
-    }
-    
-    private var horizontalPadding: CGFloat {
-        if isHugIconButton {
-            return 0
-        }
-        switch contentSize {
-        case .small:
-            return 8
-        case .medium:
-            return 16
-        case .large:
-            return 16
+            return 14
         }
     }
 
@@ -89,9 +61,7 @@ struct MultiStateButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(font)
-            .padding(.horizontal, horizontalPadding)
-            .padding(.vertical, verticalPadding)
-            .iconButtonSize(iconButtonSize, contentMode: contentMode, iconPosition: iconPosition)
+            .padding(padding)
             .contentMode(contentMode)
             .contentShape(Rectangle())
             .onHover(perform: updateHovering(onHover:))
@@ -126,17 +96,6 @@ extension View {
             self.frame(width: width)
         case .fill:
             self.frame(maxWidth: .infinity)
-        }
-    }
-}
-
-extension View {
-    @ViewBuilder func iconButtonSize(_ size: CGSize, contentMode: ButtonContentMode, iconPosition: ButtonLabelIconPosition) -> some View {
-        switch (iconPosition, contentMode) {
-        case (.onlyIcon, .hug):
-            self.frame(width: size.width, height: size.height)
-        default:
-            self
         }
     }
 }

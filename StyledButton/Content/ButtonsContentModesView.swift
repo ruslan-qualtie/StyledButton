@@ -15,7 +15,7 @@ struct ButtonsContentModesView: View {
                 title: "Done",
                 icon: "checkmark",
                 parameters: .solidBlue,
-                contentMode: .fixed(width: 200),
+                contentMode: .fixed(width: 150),
                 packing: .centerAligned,
                 action: {}
             )
@@ -30,6 +30,20 @@ struct ButtonsContentModesView: View {
                 icon: "flag",
                 parameters: .solidBlue,
                 contentMode: .hug,
+                packing: .centerAligned,
+                action: {}
+            )
+            AllSizeIconButtons(
+                icon: "flag",
+                parameters: .solidBlue,
+                contentMode: .fixed(width: 150),
+                packing: .centerAligned,
+                action: {}
+            )
+            AllSizeIconButtons(
+                icon: "flag",
+                parameters: .solidBlue,
+                contentMode: .fill,
                 packing: .centerAligned,
                 action: {}
             )

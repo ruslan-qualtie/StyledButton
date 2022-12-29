@@ -23,14 +23,14 @@ struct ButtonsContentPackingsView: View {
                 title: "Done",
                 parameters: .solidBlue,
                 contentMode: .fill,
-                packing: .centerAligned,
+                packing: .leftAligned,
                 action: {}
             )
             AllSizeIconButtons(
                 icon: "flag",
                 parameters: .solidBlue,
                 contentMode: .fill,
-                packing: .leftAligned,
+                packing: .centerAligned,
                 action: {}
             )
             Spacer()

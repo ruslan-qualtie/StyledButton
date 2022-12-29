@@ -6,7 +6,7 @@ struct AllSizeIconButtons: View {
     let contentMode: ButtonContentMode
     let packing: ButtonLabelPacking
     let action: () -> Void
-    
+
     var buttons: some View {
         HStack(alignment: .top) {
             Spacer()
@@ -14,7 +14,28 @@ struct AllSizeIconButtons: View {
                 Button(action: action) {
                     ButtonLabel(
                         systemImage: icon,
+                        parameters: parameters,
+                        contentSize: size,
                         packing: packing
+                    )
+                }
+                .buttonStyle(MultiStateButton(parameters, size, contentMode, .onlyIcon))
+                Spacer()
+            }
+        }
+    }
+
+    var loadingButtons: some View {
+        HStack(alignment: .top) {
+            Spacer()
+            ForEach(ButtonContentSize.allCases, id: \.self) { size in
+                Button(action: action) {
+                    ButtonLabel(
+                        systemImage: icon,
+                        parameters: parameters,
+                        contentSize: size,
+                        packing: packing,
+                        isLoading: true
                     )
                 }
                 .buttonStyle(MultiStateButton(parameters, size, contentMode, .onlyIcon))
@@ -26,6 +47,7 @@ struct AllSizeIconButtons: View {
     var body: some View {
         VStack {
             buttons
+            loadingButtons.disabled(true)
             buttons.disabled(true)
         }
     }

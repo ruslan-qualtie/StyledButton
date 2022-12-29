@@ -12,8 +12,11 @@
 		C31BBB0D29223C3400AE9352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31BBB0C29223C3400AE9352 /* Assets.xcassets */; };
 		C31BBB1029223C3400AE9352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31BBB0F29223C3400AE9352 /* Preview Assets.xcassets */; };
 		C31BBB172922871D00AE9352 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BBB162922871D00AE9352 /* ButtonLabel.swift */; };
+		C3396800295DC578004259AE /* NSProgressIndicator+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33967FF295DC578004259AE /* NSProgressIndicator+extensions.swift */; };
+		C3396802295DEE43004259AE /* ButtonSizesComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3396801295DEE43004259AE /* ButtonSizesComparisonView.swift */; };
 		C339A0BD2948C9CE00454C97 /* ButtonsContentModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339A0BC2948C9CE00454C97 /* ButtonsContentModesView.swift */; };
 		C339A0BF2948D14B00454C97 /* ButtonsContentPackingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339A0BE2948D14B00454C97 /* ButtonsContentPackingsView.swift */; };
+		C376D3CA295F5410005218A4 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376D3C9295F5410005218A4 /* ProgressIndicator.swift */; };
 		C39BB8F22923FAFB00B1ED3A /* MultiStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */; };
 		C39BB8F42923FC7300B1ED3A /* MultiStateButtonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */; };
 		C3FC0127294785D1002DD83D /* AllSizeIconLeftButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC0126294785D1002DD83D /* AllSizeIconLeftButtons.swift */; };
@@ -29,8 +32,11 @@
 		C31BBB0C29223C3400AE9352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31BBB0F29223C3400AE9352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C31BBB162922871D00AE9352 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		C33967FF295DC578004259AE /* NSProgressIndicator+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSProgressIndicator+extensions.swift"; sourceTree = "<group>"; };
+		C3396801295DEE43004259AE /* ButtonSizesComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSizesComparisonView.swift; sourceTree = "<group>"; };
 		C339A0BC2948C9CE00454C97 /* ButtonsContentModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContentModesView.swift; sourceTree = "<group>"; };
 		C339A0BE2948D14B00454C97 /* ButtonsContentPackingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContentPackingsView.swift; sourceTree = "<group>"; };
+		C376D3C9295F5410005218A4 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStateButton.swift; sourceTree = "<group>"; };
 		C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStateButtonParameters.swift; sourceTree = "<group>"; };
 		C3FC0126294785D1002DD83D /* AllSizeIconLeftButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSizeIconLeftButtons.swift; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 				C31BBB162922871D00AE9352 /* ButtonLabel.swift */,
 				C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */,
 				C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */,
+				C376D3C9295F5410005218A4 /* ProgressIndicator.swift */,
+				C33967FF295DC578004259AE /* NSProgressIndicator+extensions.swift */,
 				C31BBB0C29223C3400AE9352 /* Assets.xcassets */,
 				C31BBB0E29223C3400AE9352 /* Preview Content */,
 			);
@@ -98,6 +106,7 @@
 				C31BBB0A29223C3200AE9352 /* AllButtonSizesView.swift */,
 				C339A0BC2948C9CE00454C97 /* ButtonsContentModesView.swift */,
 				C339A0BE2948D14B00454C97 /* ButtonsContentPackingsView.swift */,
+				C3396801295DEE43004259AE /* ButtonSizesComparisonView.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -172,15 +181,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C376D3CA295F5410005218A4 /* ProgressIndicator.swift in Sources */,
 				C3FC0129294790E8002DD83D /* AllSizeIconRightButtons.swift in Sources */,
 				C339A0BD2948C9CE00454C97 /* ButtonsContentModesView.swift in Sources */,
 				C31BBB172922871D00AE9352 /* ButtonLabel.swift in Sources */,
 				C39BB8F22923FAFB00B1ED3A /* MultiStateButton.swift in Sources */,
 				C31BBB0B29223C3200AE9352 /* AllButtonSizesView.swift in Sources */,
+				C3396800295DC578004259AE /* NSProgressIndicator+extensions.swift in Sources */,
 				C339A0BF2948D14B00454C97 /* ButtonsContentPackingsView.swift in Sources */,
 				C39BB8F42923FC7300B1ED3A /* MultiStateButtonParameters.swift in Sources */,
 				C3FC012B294793A4002DD83D /* AllSizeTextButtons.swift in Sources */,
 				C31BBB0929223C3200AE9352 /* StyledButtonApp.swift in Sources */,
+				C3396802295DEE43004259AE /* ButtonSizesComparisonView.swift in Sources */,
 				C3FC0127294785D1002DD83D /* AllSizeIconLeftButtons.swift in Sources */,
 				C3FC012D294794C4002DD83D /* AllSizeIconButtons.swift in Sources */,
 			);
