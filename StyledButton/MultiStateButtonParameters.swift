@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MultiStateButtonParameters {
-    var loadingIndicatorColor: NSColor = .clear
+    var loadingIndicatorColor: Color = .clear
     var foregroundDefaultColor: Color = .clear
     var foregroundDisabledColor: Color = .clear
     var backgroundDefaultColor: Color = .clear
@@ -45,7 +45,7 @@ extension MultiStateButtonParameters {
 
     static var plain: MultiStateButtonParameters {
         .init(
-            loadingIndicatorColor: .init(named: "geekblue-3")!,
+            loadingIndicatorColor: Color("geekblue-3"),
             foregroundDefaultColor: Color("geekblue-3"),
             foregroundDisabledColor: Color("geekblue-3").opacity(0.3),
             backgroundHoverColor: Color("geekblue-4").opacity(0.15),
@@ -55,7 +55,7 @@ extension MultiStateButtonParameters {
 
     static var tinted: MultiStateButtonParameters {
         .init(
-            loadingIndicatorColor: .init(named: "geekblue-3")!,
+            loadingIndicatorColor: Color("geekblue-3"),
             foregroundDefaultColor: Color("geekblue-3"),
             foregroundDisabledColor: Color("geekblue-3").opacity(0.3),
             backgroundDefaultColor: Color("geekblue-4").opacity(0.1),
@@ -66,7 +66,7 @@ extension MultiStateButtonParameters {
 
     static var tintedDestructive: MultiStateButtonParameters {
         .init(
-            loadingIndicatorColor: .init(named: "red-4")!,
+            loadingIndicatorColor: Color("red-4"),
             foregroundDefaultColor: Color("red-4"),
             foregroundDisabledColor: Color("red-4").opacity(0.3),
             backgroundDefaultColor: Color("red-4").opacity(0.1),

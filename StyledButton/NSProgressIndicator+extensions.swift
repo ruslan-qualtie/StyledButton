@@ -1,4 +1,7 @@
+#if os(macOS)
 import AppKit
+
+// https://gist.github.com/berkcebi/e0f09d5ea3b95ad3230b0995435ec151
 
 extension NSProgressIndicator {
     func set(clampColor: NSColor) {
@@ -20,6 +23,8 @@ extension NSProgressIndicator {
         colorClampFilter.setValue(colorMaxComponentsVector, forKey: "inputMaxComponents")
         contentFilters = [colorClampFilter]
     }
+
+// https://stackoverflow.com/a/32396595/2895314
 
     func set(polynomialColor: NSColor) {
         guard let adjustedColor = polynomialColor.usingColorSpace(.sRGB) else {
@@ -43,3 +48,4 @@ extension NSProgressIndicator {
         contentFilters = [colorPolynomialFilter]
     }
 }
+#endif
