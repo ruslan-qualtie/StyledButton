@@ -18,10 +18,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .small,
-                            .hug,
-                            .iconLeft
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .small,
+                            contentMode: .hug,
+                            iconPosition: .iconLeft
                         )
                     )
                     .offset(x: 16)
@@ -36,10 +36,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .medium,
-                            .hug,
-                            .iconLeft
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .medium,
+                            contentMode: .hug,
+                            iconPosition: .iconLeft
                         )
                     )
                     .offset(x: 140)
@@ -54,10 +54,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .large,
-                            .hug,
-                            .iconLeft
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .large,
+                            contentMode: .hug,
+                            iconPosition: .iconLeft
                         )
                     )
                     .offset(x: 266)
@@ -80,10 +80,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .small,
-                            .hug,
-                            .iconRight
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .small,
+                            contentMode: .hug,
+                            iconPosition: .iconRight
                         )
                     )
                     .offset(x: 13.5)
@@ -99,10 +99,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .medium,
-                            .hug,
-                            .iconRight
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .medium,
+                            contentMode: .hug,
+                            iconPosition: .iconRight
                         )
                     )
                     .offset(x: 136.5)
@@ -118,10 +118,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .large,
-                            .hug,
-                            .iconRight
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .large,
+                            contentMode: .hug,
+                            iconPosition: .iconRight
                         )
                     )
                     .offset(x: 264)
@@ -142,10 +142,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .small,
-                            .hug,
-                            .noIcon
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .small,
+                            contentMode: .hug,
+                            iconPosition: .noIcon
                         )
                     )
                     .offset(x: 25)
@@ -159,10 +159,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .medium,
-                            .hug,
-                            .noIcon
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .medium,
+                            contentMode: .hug,
+                            iconPosition: .noIcon
                         )
                     )
                     .offset(x: 173)
@@ -176,10 +176,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .large,
-                            .hug,
-                            .noIcon
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .large,
+                            contentMode: .hug,
+                            iconPosition: .noIcon
                         )
                     )
                     .offset(x: 327)
@@ -200,10 +200,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .small,
-                            .hug,
-                            .onlyIcon
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .small,
+                            contentMode: .hug,
+                            iconPosition: .onlyIcon
                         )
                     )
                     .offset(x: 41)
@@ -217,10 +217,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .medium,
-                            .hug,
-                            .onlyIcon
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .medium,
+                            contentMode: .hug,
+                            iconPosition: .onlyIcon
                         )
                     )
                     .offset(x: 212)
@@ -234,10 +234,10 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            TinteColorStyle(),
-                            .large,
-                            .hug,
-                            .onlyIcon
+                            colorStyle: TinteColorStyle(),
+                            contentSize: .large,
+                            contentMode: .hug,
+                            iconPosition: .onlyIcon
                         )
                     )
                     .offset(x: 393)

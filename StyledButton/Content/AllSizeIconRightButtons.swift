@@ -23,7 +23,7 @@ struct AllSizeIconRightButtons: View {
                     )
                 }
                 .buttonStyle(
-                    MultiStateButton(colorStyle, size, contentMode, .iconRight)
+                    MultiStateButton(colorStyle: colorStyle, contentSize: size, contentMode: contentMode, iconPosition: .iconRight)
                 )
                 Spacer()
             }
@@ -46,7 +46,7 @@ struct AllSizeIconRightButtons: View {
                     )
                 }
                 .buttonStyle(
-                    MultiStateButton(colorStyle, size, contentMode, .iconRight)
+                    MultiStateButton(colorStyle: colorStyle, contentSize: size, contentMode: contentMode, iconPosition: .iconRight)
                 )
                 Spacer()
             }

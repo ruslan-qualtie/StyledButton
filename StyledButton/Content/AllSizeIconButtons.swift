@@ -19,7 +19,7 @@ struct AllSizeIconButtons: View {
                         packing: packing
                     )
                 }
-                .buttonStyle(MultiStateButton(colorStyle, size, contentMode, .onlyIcon))
+                .buttonStyle(MultiStateButton(colorStyle: colorStyle, contentSize: size, contentMode: contentMode, iconPosition: .onlyIcon))
                 Spacer()
             }
         }
@@ -38,7 +38,7 @@ struct AllSizeIconButtons: View {
                         isLoading: true
                     )
                 }
-                .buttonStyle(MultiStateButton(colorStyle, size, contentMode, .onlyIcon))
+                .buttonStyle(MultiStateButton(colorStyle: colorStyle, contentSize: size, contentMode: contentMode, iconPosition: .onlyIcon))
                 Spacer()
             }
         }

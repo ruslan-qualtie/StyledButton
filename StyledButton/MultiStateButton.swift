@@ -47,10 +47,10 @@ struct MultiStateButton: ButtonStyle {
     }
 
     init(
-        _ colorStyle: ButtonColorStyle,
-        _ contentSize: ButtonContentSize,
-        _ contentMode: ButtonContentMode,
-        _ iconPosition: ButtonLabelIconPosition
+        colorStyle: ButtonColorStyle,
+        contentSize: ButtonContentSize,
+        contentMode: ButtonContentMode,
+        iconPosition: ButtonLabelIconPosition
     ) {
         self.colorStyle = colorStyle
         self.contentSize = contentSize
