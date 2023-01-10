@@ -3,7 +3,7 @@ import SwiftUI
 struct AllSizeIconRightButtons: View {
     let title: String
     let icon: String
-    let parameters: MultiStateButtonParameters
+    let colorStyle: ButtonColorStyle
     let contentMode: ButtonContentMode
     let packing: ButtonLabelPacking
     let action: () -> Void
@@ -16,14 +16,14 @@ struct AllSizeIconRightButtons: View {
                     ButtonLabel(
                         text: title,
                         systemImage: icon,
-                        parameters: parameters,
+                        colorStyle: colorStyle,
                         contentSize: size,
                         iconPosition: .iconRight,
                         packing: packing
                     )
                 }
                 .buttonStyle(
-                    MultiStateButton(parameters, size, contentMode, .iconRight)
+                    MultiStateButton(colorStyle, size, contentMode, .iconRight)
                 )
                 Spacer()
             }
@@ -38,7 +38,7 @@ struct AllSizeIconRightButtons: View {
                     ButtonLabel(
                         text: title,
                         systemImage: icon,
-                        parameters: parameters,
+                        colorStyle: colorStyle,
                         contentSize: size,
                         iconPosition: .iconRight,
                         packing: packing,
@@ -46,7 +46,7 @@ struct AllSizeIconRightButtons: View {
                     )
                 }
                 .buttonStyle(
-                    MultiStateButton(parameters, size, contentMode, .iconRight)
+                    MultiStateButton(colorStyle, size, contentMode, .iconRight)
                 )
                 Spacer()
             }
@@ -67,7 +67,7 @@ struct AllSizeIconRightButtons_Previews: PreviewProvider {
         AllSizeIconRightButtons(
             title: "Done",
             icon: "checkmark",
-            parameters: .solidBlue,
+            colorStyle: SolidBlueColorStyle(),
             contentMode: .hug,
             packing: .centerAligned,
             action: {}

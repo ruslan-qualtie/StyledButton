@@ -2,7 +2,7 @@ import SwiftUI
 
 struct AllSizeIconButtons: View {
     let icon: String
-    let parameters: MultiStateButtonParameters
+    let colorStyle: ButtonColorStyle
     let contentMode: ButtonContentMode
     let packing: ButtonLabelPacking
     let action: () -> Void
@@ -14,12 +14,12 @@ struct AllSizeIconButtons: View {
                 Button(action: action) {
                     ButtonLabel(
                         systemImage: icon,
-                        parameters: parameters,
+                        colorStyle: colorStyle,
                         contentSize: size,
                         packing: packing
                     )
                 }
-                .buttonStyle(MultiStateButton(parameters, size, contentMode, .onlyIcon))
+                .buttonStyle(MultiStateButton(colorStyle, size, contentMode, .onlyIcon))
                 Spacer()
             }
         }
@@ -32,13 +32,13 @@ struct AllSizeIconButtons: View {
                 Button(action: action) {
                     ButtonLabel(
                         systemImage: icon,
-                        parameters: parameters,
+                        colorStyle: colorStyle,
                         contentSize: size,
                         packing: packing,
                         isLoading: true
                     )
                 }
-                .buttonStyle(MultiStateButton(parameters, size, contentMode, .onlyIcon))
+                .buttonStyle(MultiStateButton(colorStyle, size, contentMode, .onlyIcon))
                 Spacer()
             }
         }
@@ -57,7 +57,7 @@ struct AllSizeIconButtons_Previews: PreviewProvider {
     static var previews: some View {
         AllSizeIconButtons(
             icon: "flag",
-            parameters: .solidBlue,
+            colorStyle: SolidBlueColorStyle(),
             contentMode: .hug,
             packing: .centerAligned,
             action: {}

@@ -16,7 +16,7 @@ enum ButtonLabelPacking {
 struct ButtonLabel<Title: View, Icon: View>: View {
     private let titleContent: () -> Title?
     private let iconContent: () -> Icon?
-    private var parameters: MultiStateButtonParameters
+    private var colorStyle: ButtonColorStyle
     private var contentSize: ButtonContentSize
     private let iconPosition: ButtonLabelIconPosition
     private let packing: ButtonLabelPacking
@@ -25,7 +25,7 @@ struct ButtonLabel<Title: View, Icon: View>: View {
     init(
         @ViewBuilder title: @escaping () -> Title? = { nil },
         @ViewBuilder icon: @escaping () -> Icon? = { nil },
-        parameters: MultiStateButtonParameters,
+        colorStyle: ButtonColorStyle,
         contentSize: ButtonContentSize,
         iconPosition: ButtonLabelIconPosition,
         packing: ButtonLabelPacking,
@@ -33,7 +33,7 @@ struct ButtonLabel<Title: View, Icon: View>: View {
     ) {
         self.titleContent = title
         self.iconContent = icon
-        self.parameters = parameters
+        self.colorStyle = colorStyle
         self.contentSize = contentSize
         self.iconPosition = iconPosition
         self.packing = packing
@@ -43,7 +43,7 @@ struct ButtonLabel<Title: View, Icon: View>: View {
     init(
         text: String,
         systemImage: String,
-        parameters: MultiStateButtonParameters = .solidBlue,
+        colorStyle: ButtonColorStyle = SolidBlueColorStyle(),
         contentSize: ButtonContentSize = .medium,
         iconPosition: ButtonLabelIconPosition = .iconLeft,
         packing: ButtonLabelPacking = .centerAligned,
@@ -52,7 +52,7 @@ struct ButtonLabel<Title: View, Icon: View>: View {
         self.init(
             title: { Text(text) },
             icon: { Image(systemName: systemImage) },
-            parameters: parameters,
+            colorStyle: colorStyle,
             contentSize: contentSize,
             iconPosition: iconPosition,
             packing: packing,
@@ -62,14 +62,14 @@ struct ButtonLabel<Title: View, Icon: View>: View {
 
     init(
         systemImage: String,
-        parameters: MultiStateButtonParameters = .solidBlue,
+        colorStyle: ButtonColorStyle = SolidBlueColorStyle(),
         contentSize: ButtonContentSize = .medium,
         packing: ButtonLabelPacking = .centerAligned,
         isLoading: Bool = false
     ) where Title == Text, Icon == Image {
         self.init(
             icon: { Image(systemName: systemImage) },
-            parameters: parameters,
+            colorStyle: colorStyle,
             contentSize: contentSize,
             iconPosition: .onlyIcon,
             packing: packing,
@@ -79,14 +79,14 @@ struct ButtonLabel<Title: View, Icon: View>: View {
 
     init(
         text: String,
-        parameters: MultiStateButtonParameters = .solidBlue,
+        colorStyle: ButtonColorStyle = SolidBlueColorStyle(),
         contentSize: ButtonContentSize = .medium,
         packing: ButtonLabelPacking = .centerAligned,
         isLoading: Bool = false
     ) where Title == Text, Icon == Image {
         self.init(
             title: { Text(text) },
-            parameters: parameters,
+            colorStyle: colorStyle,
             contentSize: contentSize,
             iconPosition: .noIcon,
             packing: packing,
@@ -157,7 +157,7 @@ struct ButtonLabel<Title: View, Icon: View>: View {
     private var icon: some View {
         Group {
             if isLoading {
-                ProgressIndicator(color: parameters.loadingIndicatorColor)
+                ProgressIndicator(color: colorStyle.loadingIndicatorColor)
                     .scaleEffect(progressViewScale, anchor: .center)
             } else {
                 iconContent()

@@ -6,7 +6,7 @@ struct ButtonsContentModesView: View {
             AllSizeIconLeftButtons(
                 title: "Done",
                 icon: "doc.text.below.ecg",
-                parameters: .solidBlue,
+                colorStyle: SolidBlueColorStyle(),
                 contentMode: .hug,
                 packing: .centerAligned,
                 action: {}
@@ -14,35 +14,35 @@ struct ButtonsContentModesView: View {
             AllSizeIconRightButtons(
                 title: "Done",
                 icon: "checkmark",
-                parameters: .solidBlue,
+                colorStyle: SolidBlueColorStyle(),
                 contentMode: .fixed(width: 150),
                 packing: .centerAligned,
                 action: {}
             )
             AllSizeTextButtons(
                 title: "Done",
-                parameters: .solidBlue,
+                colorStyle: SolidBlueColorStyle(),
                 contentMode: .fill,
                 packing: .centerAligned,
                 action: {}
             )
             AllSizeIconButtons(
                 icon: "flag",
-                parameters: .solidBlue,
+                colorStyle: SolidBlueColorStyle(),
                 contentMode: .hug,
                 packing: .centerAligned,
                 action: {}
             )
             AllSizeIconButtons(
                 icon: "flag",
-                parameters: .solidBlue,
+                colorStyle: SolidBlueColorStyle(),
                 contentMode: .fixed(width: 150),
                 packing: .centerAligned,
                 action: {}
             )
             AllSizeIconButtons(
                 icon: "flag",
-                parameters: .solidBlue,
+                colorStyle: SolidBlueColorStyle(),
                 contentMode: .fill,
                 packing: .centerAligned,
                 action: {}

@@ -18,7 +18,7 @@
 		C339A0BF2948D14B00454C97 /* ButtonsContentPackingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339A0BE2948D14B00454C97 /* ButtonsContentPackingsView.swift */; };
 		C376D3CA295F5410005218A4 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376D3C9295F5410005218A4 /* ProgressIndicator.swift */; };
 		C39BB8F22923FAFB00B1ED3A /* MultiStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */; };
-		C39BB8F42923FC7300B1ED3A /* MultiStateButtonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */; };
+		C39BB8F42923FC7300B1ED3A /* ButtonColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BB8F32923FC7300B1ED3A /* ButtonColorStyle.swift */; };
 		C3FC0127294785D1002DD83D /* AllSizeIconLeftButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC0126294785D1002DD83D /* AllSizeIconLeftButtons.swift */; };
 		C3FC0129294790E8002DD83D /* AllSizeIconRightButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC0128294790E8002DD83D /* AllSizeIconRightButtons.swift */; };
 		C3FC012B294793A4002DD83D /* AllSizeTextButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC012A294793A4002DD83D /* AllSizeTextButtons.swift */; };
@@ -38,7 +38,7 @@
 		C339A0BE2948D14B00454C97 /* ButtonsContentPackingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContentPackingsView.swift; sourceTree = "<group>"; };
 		C376D3C9295F5410005218A4 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStateButton.swift; sourceTree = "<group>"; };
-		C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStateButtonParameters.swift; sourceTree = "<group>"; };
+		C39BB8F32923FC7300B1ED3A /* ButtonColorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonColorStyle.swift; sourceTree = "<group>"; };
 		C3FC0126294785D1002DD83D /* AllSizeIconLeftButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSizeIconLeftButtons.swift; sourceTree = "<group>"; };
 		C3FC0128294790E8002DD83D /* AllSizeIconRightButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSizeIconRightButtons.swift; sourceTree = "<group>"; };
 		C3FC012A294793A4002DD83D /* AllSizeTextButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSizeTextButtons.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				C31BBB0829223C3200AE9352 /* StyledButtonApp.swift */,
 				C31BBB162922871D00AE9352 /* ButtonLabel.swift */,
 				C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */,
-				C39BB8F32923FC7300B1ED3A /* MultiStateButtonParameters.swift */,
+				C39BB8F32923FC7300B1ED3A /* ButtonColorStyle.swift */,
 				C376D3C9295F5410005218A4 /* ProgressIndicator.swift */,
 				C33967FF295DC578004259AE /* NSProgressIndicator+extensions.swift */,
 				C31BBB0C29223C3400AE9352 /* Assets.xcassets */,
@@ -189,7 +189,7 @@
 				C31BBB0B29223C3200AE9352 /* AllButtonSizesView.swift in Sources */,
 				C3396800295DC578004259AE /* NSProgressIndicator+extensions.swift in Sources */,
 				C339A0BF2948D14B00454C97 /* ButtonsContentPackingsView.swift in Sources */,
-				C39BB8F42923FC7300B1ED3A /* MultiStateButtonParameters.swift in Sources */,
+				C39BB8F42923FC7300B1ED3A /* ButtonColorStyle.swift in Sources */,
 				C3FC012B294793A4002DD83D /* AllSizeTextButtons.swift in Sources */,
 				C31BBB0929223C3200AE9352 /* StyledButtonApp.swift in Sources */,
 				C3396802295DEE43004259AE /* ButtonSizesComparisonView.swift in Sources */,

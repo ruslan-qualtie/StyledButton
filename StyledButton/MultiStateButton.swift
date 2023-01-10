@@ -15,7 +15,7 @@ enum ButtonContentMode: Equatable {
 struct MultiStateButton: ButtonStyle {
     @Environment(\.isEnabled) private var isEnabled
     @State private var isHovering = false
-    private var parameters: MultiStateButtonParameters
+    private var colorStyle: ButtonColorStyle
     private var contentSize: ButtonContentSize
     private var contentMode: ButtonContentMode
     private var iconPosition: ButtonLabelIconPosition
@@ -47,12 +47,12 @@ struct MultiStateButton: ButtonStyle {
     }
 
     init(
-        _ parameters: MultiStateButtonParameters,
+        _ colorStyle: ButtonColorStyle,
         _ contentSize: ButtonContentSize,
         _ contentMode: ButtonContentMode,
         _ iconPosition: ButtonLabelIconPosition
     ) {
-        self.parameters = parameters
+        self.colorStyle = colorStyle
         self.contentSize = contentSize
         self.contentMode = contentMode
         self.iconPosition = iconPosition
@@ -65,19 +65,19 @@ struct MultiStateButton: ButtonStyle {
             .contentMode(contentMode)
             .contentShape(Rectangle())
             .onHover(perform: updateHovering(onHover:))
-            .foregroundColor(isEnabled ? parameters.foregroundDefaultColor : parameters.foregroundDisabledColor)
+            .foregroundColor(isEnabled ? colorStyle.foregroundDefaultColor : colorStyle.foregroundDisabledColor)
             .background(backgroundColor(isPressed: configuration.isPressed))
             .cornerRadius(8)
     }
 
     private func backgroundColor(isPressed: Bool) -> Color {
         if !isEnabled {
-            return parameters.backgroundDefaultColor.opacity(0.3)
+            return colorStyle.backgroundDefaultColor.opacity(0.3)
         }
         if isPressed {
-            return parameters.backgroundActiveColor
+            return colorStyle.backgroundActiveColor
         }
-        return isHovering ? parameters.backgroundHoverColor : parameters.backgroundDefaultColor
+        return isHovering ? colorStyle.backgroundHoverColor : colorStyle.backgroundDefaultColor
     }
 
     private func updateHovering(onHover: Bool) {

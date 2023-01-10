@@ -7,7 +7,7 @@ struct AllButtonSizesView: View {
                 AllSizeIconLeftButtons(
                     title: "Done",
                     icon: "doc.text.below.ecg",
-                    parameters: .solidBlue,
+                    colorStyle: SolidBlueColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -15,21 +15,21 @@ struct AllButtonSizesView: View {
                 AllSizeIconRightButtons(
                     title: "Done",
                     icon: "checkmark",
-                    parameters: .solidBlue,
+                    colorStyle: SolidBlueColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeTextButtons(
                     title: "Done",
-                    parameters: .solidBlue,
+                    colorStyle: SolidBlueColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeIconButtons(
                     icon: "flag",
-                    parameters: .solidBlue,
+                    colorStyle: SolidBlueColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -39,7 +39,7 @@ struct AllButtonSizesView: View {
                 AllSizeIconLeftButtons(
                     title: "Done",
                     icon: "doc.text.below.ecg",
-                    parameters: .solidGreen,
+                    colorStyle: SolidGreenColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -47,21 +47,21 @@ struct AllButtonSizesView: View {
                 AllSizeIconRightButtons(
                     title: "Done",
                     icon: "checkmark",
-                    parameters: .solidGreen,
+                    colorStyle: SolidGreenColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeTextButtons(
                     title: "Done",
-                    parameters: .solidGreen,
+                    colorStyle: SolidGreenColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeIconButtons(
                     icon: "flag",
-                    parameters: .solidGreen,
+                    colorStyle: SolidGreenColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -71,7 +71,7 @@ struct AllButtonSizesView: View {
                 AllSizeIconLeftButtons(
                     title: "Done",
                     icon: "doc.text.below.ecg",
-                    parameters: .solidWhite,
+                    colorStyle: SolidWhiteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -79,21 +79,21 @@ struct AllButtonSizesView: View {
                 AllSizeIconRightButtons(
                     title: "Done",
                     icon: "checkmark",
-                    parameters: .solidWhite,
+                    colorStyle: SolidWhiteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeTextButtons(
                     title: "Done",
-                    parameters: .solidWhite,
+                    colorStyle: SolidWhiteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeIconButtons(
                     icon: "flag",
-                    parameters: .solidWhite,
+                    colorStyle: SolidWhiteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -103,7 +103,7 @@ struct AllButtonSizesView: View {
                 AllSizeIconLeftButtons(
                     title: "View Report",
                     icon: "doc.text.below.ecg",
-                    parameters: .plain,
+                    colorStyle: PlainColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -111,21 +111,21 @@ struct AllButtonSizesView: View {
                 AllSizeIconRightButtons(
                     title: "View Report",
                     icon: "checkmark",
-                    parameters: .plain,
+                    colorStyle: PlainColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeTextButtons(
                     title: "View Report",
-                    parameters: .plain,
+                    colorStyle: PlainColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeIconButtons(
                     icon: "flag",
-                    parameters: .plain,
+                    colorStyle: PlainColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -135,7 +135,7 @@ struct AllButtonSizesView: View {
                 AllSizeIconLeftButtons(
                     title: "View Report",
                     icon: "doc.text.below.ecg",
-                    parameters: .tinted,
+                    colorStyle: TinteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -143,21 +143,21 @@ struct AllButtonSizesView: View {
                 AllSizeIconRightButtons(
                     title: "View Report",
                     icon: "checkmark",
-                    parameters: .tinted,
+                    colorStyle: TinteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeTextButtons(
                     title: "View Report",
-                    parameters: .tinted,
+                    colorStyle: TinteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeIconButtons(
                     icon: "flag",
-                    parameters: .tinted,
+                    colorStyle: TinteColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -167,7 +167,7 @@ struct AllButtonSizesView: View {
                 AllSizeIconLeftButtons(
                     title: "View Report",
                     icon: "doc.text.below.ecg",
-                    parameters: .tintedDestructive,
+                    colorStyle: TintedDestructiveColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
@@ -175,21 +175,21 @@ struct AllButtonSizesView: View {
                 AllSizeIconRightButtons(
                     title: "View Report",
                     icon: "checkmark",
-                    parameters: .tintedDestructive,
+                    colorStyle: TintedDestructiveColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeTextButtons(
                     title: "View Report",
-                    parameters: .tintedDestructive,
+                    colorStyle: TintedDestructiveColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action
                 )
                 AllSizeIconButtons(
                     icon: "flag",
-                    parameters: .tintedDestructive,
+                    colorStyle: TintedDestructiveColorStyle(),
                     contentMode: .hug,
                     packing: .centerAligned,
                     action: action

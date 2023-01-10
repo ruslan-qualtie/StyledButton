@@ -11,14 +11,14 @@ struct ButtonSizesComparisonView: View {
                         ButtonLabel(
                             text: "Done",
                             systemImage: "doc.text.below.ecg",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .small,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .small,
                             .hug,
                             .iconLeft
@@ -29,14 +29,14 @@ struct ButtonSizesComparisonView: View {
                         ButtonLabel(
                             text: "Done",
                             systemImage: "doc.text.below.ecg",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .medium,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .medium,
                             .hug,
                             .iconLeft
@@ -47,14 +47,14 @@ struct ButtonSizesComparisonView: View {
                         ButtonLabel(
                             text: "Done",
                             systemImage: "doc.text.below.ecg",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .large,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .large,
                             .hug,
                             .iconLeft
@@ -72,7 +72,7 @@ struct ButtonSizesComparisonView: View {
                         ButtonLabel(
                             text: "Done",
                             systemImage: "checkmark",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .small,
                             iconPosition: .iconRight,
                             packing: .centerAligned
@@ -80,7 +80,7 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .small,
                             .hug,
                             .iconRight
@@ -91,7 +91,7 @@ struct ButtonSizesComparisonView: View {
                         ButtonLabel(
                             text: "Done",
                             systemImage: "checkmark",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .medium,
                             iconPosition: .iconRight,
                             packing: .centerAligned
@@ -99,7 +99,7 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .medium,
                             .hug,
                             .iconRight
@@ -110,7 +110,7 @@ struct ButtonSizesComparisonView: View {
                         ButtonLabel(
                             text: "Done",
                             systemImage: "checkmark",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .large,
                             iconPosition: .iconRight,
                             packing: .centerAligned
@@ -118,7 +118,7 @@ struct ButtonSizesComparisonView: View {
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .large,
                             .hug,
                             .iconRight
@@ -135,14 +135,14 @@ struct ButtonSizesComparisonView: View {
                     Button(action: {}) {
                         ButtonLabel(
                             text: "Done",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .small,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .small,
                             .hug,
                             .noIcon
@@ -152,14 +152,14 @@ struct ButtonSizesComparisonView: View {
                     Button(action: {}) {
                         ButtonLabel(
                             text: "Done",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .medium,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .medium,
                             .hug,
                             .noIcon
@@ -169,14 +169,14 @@ struct ButtonSizesComparisonView: View {
                     Button(action: {}) {
                         ButtonLabel(
                             text: "Done",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .large,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .large,
                             .hug,
                             .noIcon
@@ -193,14 +193,14 @@ struct ButtonSizesComparisonView: View {
                     Button(action: {}) {
                         ButtonLabel(
                             systemImage: "flag",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .small,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .small,
                             .hug,
                             .onlyIcon
@@ -210,14 +210,14 @@ struct ButtonSizesComparisonView: View {
                     Button(action: {}) {
                         ButtonLabel(
                             systemImage: "flag",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .medium,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .medium,
                             .hug,
                             .onlyIcon
@@ -227,14 +227,14 @@ struct ButtonSizesComparisonView: View {
                     Button(action: {}) {
                         ButtonLabel(
                             systemImage: "flag",
-                            parameters: .tinted,
+                            colorStyle: TinteColorStyle(),
                             contentSize: .large,
                             packing: .centerAligned
                         )
                     }
                     .buttonStyle(
                         MultiStateButton(
-                            .tinted,
+                            TinteColorStyle(),
                             .large,
                             .hug,
                             .onlyIcon
