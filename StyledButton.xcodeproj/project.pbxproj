@@ -12,6 +12,10 @@
 		C31BBB0D29223C3400AE9352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31BBB0C29223C3400AE9352 /* Assets.xcassets */; };
 		C31BBB1029223C3400AE9352 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31BBB0F29223C3400AE9352 /* Preview Assets.xcassets */; };
 		C31BBB172922871D00AE9352 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31BBB162922871D00AE9352 /* ButtonLabel.swift */; };
+		C326886E296DC4B100F46F1E /* IconLeftLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C326886D296DC4B100F46F1E /* IconLeftLabel.swift */; };
+		C3268870296DC70600F46F1E /* IconRightLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C326886F296DC70600F46F1E /* IconRightLabel.swift */; };
+		C3268872296DCAC600F46F1E /* NoIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3268871296DCAC600F46F1E /* NoIconLabel.swift */; };
+		C3268874296DCBA500F46F1E /* IconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3268873296DCBA500F46F1E /* IconLabel.swift */; };
 		C3396800295DC578004259AE /* NSProgressIndicator+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33967FF295DC578004259AE /* NSProgressIndicator+extensions.swift */; };
 		C3396802295DEE43004259AE /* ButtonSizesComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3396801295DEE43004259AE /* ButtonSizesComparisonView.swift */; };
 		C339A0BD2948C9CE00454C97 /* ButtonsContentModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339A0BC2948C9CE00454C97 /* ButtonsContentModesView.swift */; };
@@ -32,6 +36,10 @@
 		C31BBB0C29223C3400AE9352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31BBB0F29223C3400AE9352 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C31BBB162922871D00AE9352 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		C326886D296DC4B100F46F1E /* IconLeftLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLeftLabel.swift; sourceTree = "<group>"; };
+		C326886F296DC70600F46F1E /* IconRightLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconRightLabel.swift; sourceTree = "<group>"; };
+		C3268871296DCAC600F46F1E /* NoIconLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoIconLabel.swift; sourceTree = "<group>"; };
+		C3268873296DCBA500F46F1E /* IconLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLabel.swift; sourceTree = "<group>"; };
 		C33967FF295DC578004259AE /* NSProgressIndicator+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSProgressIndicator+extensions.swift"; sourceTree = "<group>"; };
 		C3396801295DEE43004259AE /* ButtonSizesComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSizesComparisonView.swift; sourceTree = "<group>"; };
 		C339A0BC2948C9CE00454C97 /* ButtonsContentModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContentModesView.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 			children = (
 				C39BB8F02923ADF300B1ED3A /* Content */,
 				C31BBB0829223C3200AE9352 /* StyledButtonApp.swift */,
+				C326886D296DC4B100F46F1E /* IconLeftLabel.swift */,
+				C326886F296DC70600F46F1E /* IconRightLabel.swift */,
+				C3268871296DCAC600F46F1E /* NoIconLabel.swift */,
+				C3268873296DCBA500F46F1E /* IconLabel.swift */,
 				C31BBB162922871D00AE9352 /* ButtonLabel.swift */,
 				C39BB8F12923FAFB00B1ED3A /* MultiStateButton.swift */,
 				C39BB8F32923FC7300B1ED3A /* ButtonColorStyle.swift */,
@@ -186,12 +198,16 @@
 				C339A0BD2948C9CE00454C97 /* ButtonsContentModesView.swift in Sources */,
 				C31BBB172922871D00AE9352 /* ButtonLabel.swift in Sources */,
 				C39BB8F22923FAFB00B1ED3A /* MultiStateButton.swift in Sources */,
+				C3268874296DCBA500F46F1E /* IconLabel.swift in Sources */,
 				C31BBB0B29223C3200AE9352 /* AllButtonSizesView.swift in Sources */,
+				C3268870296DC70600F46F1E /* IconRightLabel.swift in Sources */,
 				C3396800295DC578004259AE /* NSProgressIndicator+extensions.swift in Sources */,
+				C3268872296DCAC600F46F1E /* NoIconLabel.swift in Sources */,
 				C339A0BF2948D14B00454C97 /* ButtonsContentPackingsView.swift in Sources */,
 				C39BB8F42923FC7300B1ED3A /* ButtonColorStyle.swift in Sources */,
 				C3FC012B294793A4002DD83D /* AllSizeTextButtons.swift in Sources */,
 				C31BBB0929223C3200AE9352 /* StyledButtonApp.swift in Sources */,
+				C326886E296DC4B100F46F1E /* IconLeftLabel.swift in Sources */,
 				C3396802295DEE43004259AE /* ButtonSizesComparisonView.swift in Sources */,
 				C3FC0127294785D1002DD83D /* AllSizeIconLeftButtons.swift in Sources */,
 				C3FC012D294794C4002DD83D /* AllSizeIconButtons.swift in Sources */,

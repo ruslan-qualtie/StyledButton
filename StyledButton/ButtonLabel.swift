@@ -164,90 +164,43 @@ struct ButtonLabel<Title: View, Icon: View>: View {
             }
         }
         .frame(width: iconSize.width, height: iconSize.height)
-        // .background(Color.blue)
     }
 
     private var title: some View {
         titleContent()?
             .fixedSize()
             .frame(height: iconSize.height)
-        // .background(Color.green)
-    }
-
-    private var iconLeftLabel: some View {
-        HStack(spacing: 0) {
-            switch packing {
-            case .spaceBetween:
-                icon
-                Spacer(minLength: 0)
-                title
-                    .padding(.leading, labelContentSpacing)
-                    .padding(.trailing, labelTitlePadding)
-            case .centerAligned:
-                icon
-                title
-                    .padding(.leading, labelContentSpacing)
-                    .padding(.trailing, labelTitlePadding)
-            case .leftAligned:
-                icon
-                title
-                    .padding(.leading, labelContentSpacing)
-                    .padding(.trailing, labelTitlePadding)
-                Spacer(minLength: 0)
-            }
-        }
-        .padding(.leading, labelIconPadding)
-    }
-
-    private var iconRightLabel: some View {
-        HStack(spacing: 0) {
-            switch packing {
-            case .spaceBetween:
-                title
-                    .padding(.trailing, labelContentSpacing)
-                Spacer(minLength: 0)
-                icon
-                    .padding(.trailing, labelIconPadding)
-            case .centerAligned:
-                title
-                    .padding(.trailing, labelContentSpacing)
-                icon
-                    .padding(.trailing, labelIconPadding)
-            case .leftAligned:
-                title
-                    .padding(.trailing, labelContentSpacing)
-                icon
-                    .padding(.trailing, labelIconPadding)
-                Spacer(minLength: 0)
-            }
-        }
-        .padding(.leading, labelTitlePadding)
-    }
-
-    private var noIconLabel: some View {
-        HStack(spacing: 0) {
-            switch packing {
-            case .leftAligned:
-                title
-                Spacer(minLength: 0)
-            default:
-                title
-            }
-        }
-        .padding(.horizontal, labelTitlePadding)
     }
 
     var body: some View {
         Group {
             switch iconPosition {
             case .iconLeft:
-                iconLeftLabel
+                IconLeftLabel(
+                    title: title,
+                    icon: icon,
+                    packing: packing,
+                    labelContentSpacing: labelContentSpacing,
+                    labelTitlePadding: labelTitlePadding,
+                    labelIconPadding: labelIconPadding
+                )
             case .iconRight:
-                iconRightLabel
+                IconRightLabel(
+                    title: title,
+                    icon: icon,
+                    packing: packing,
+                    labelContentSpacing: labelContentSpacing,
+                    labelTitlePadding: labelTitlePadding,
+                    labelIconPadding: labelIconPadding
+                )
             case .noIcon:
-                noIconLabel
+                NoIconLabel(
+                    title: title,
+                    packing: packing,
+                    labelTitlePadding: labelTitlePadding
+                )
             case .onlyIcon:
-                icon
+                IconLabel(icon: icon)
             }
         }
     }
