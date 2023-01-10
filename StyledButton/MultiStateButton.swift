@@ -65,19 +65,29 @@ struct MultiStateButton: ButtonStyle {
             .contentMode(contentMode)
             .contentShape(Rectangle())
             .onHover(perform: updateHovering(onHover:))
-            .foregroundColor(isEnabled ? colorStyle.foregroundDefaultColor : colorStyle.foregroundDisabledColor)
+            .foregroundColor(foregroundColor())
             .background(backgroundColor(isPressed: configuration.isPressed))
             .cornerRadius(8)
     }
+    
+    private func foregroundColor() -> Color {
+        if isEnabled {
+            return colorStyle.foregroundDefaultColor
+        }
+        return colorStyle.foregroundDisabledColor
+    }
 
     private func backgroundColor(isPressed: Bool) -> Color {
-        if !isEnabled {
+        guard isEnabled else {
             return colorStyle.backgroundDefaultColor.opacity(0.3)
         }
         if isPressed {
             return colorStyle.backgroundActiveColor
         }
-        return isHovering ? colorStyle.backgroundHoverColor : colorStyle.backgroundDefaultColor
+        if isHovering {
+            return colorStyle.backgroundHoverColor
+        }
+        return colorStyle.backgroundDefaultColor
     }
 
     private func updateHovering(onHover: Bool) {
